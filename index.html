@@ -47,7 +47,7 @@
                 <a target="_blank" href="https://scholar.google.com.hk/citations?user=CpCQmkwAAAAJ&hl=en">Shufei Li</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a target="_blank" href="https://scholar.google.com.sg/citations?user=kja7k5MAAAAJ&hl=en">Zuoxu Wang</a><sup>1</sup>,
+                <a target="_blank" href="https://scholar.google.com.sg/citations?user=kja7k5MAAAAJ&hl=en">Zuoxu Wang</a><sup>1📧</sup>,
               </span>
               <span class="author-block">
                 <a target="_blank" href="https://scholar.google.com/citations?user=ziAzfCoAAAAJ&hl=en">Lixiu Wu</a><sup>3</sup>,
@@ -82,7 +82,7 @@
                     <span class="icon">
                       <i class="fas fa-file"></i>
                     </span>
-                    <span>arXiv</span>
+                    <span><b>arXiv</b></span>
                   </a>
                 </span>
 
@@ -93,7 +93,7 @@
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
-                    <span>Video</span>
+                    <span><b>Video</b></span>
                   </a>
                 </span>
 
@@ -104,7 +104,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span><b>Code</b></span>
                   </a>
                 </span>
 
@@ -118,27 +118,7 @@
   </section>
 
 
-  <section class="hero teaser" style="position: relative; top: 0px">
-    <div class="container is-fullhd">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns is-vcentered  is-centered">
-            <video id="teaser_video" controls muted autoplay loop height="80%" width="80%">
-              <source src="media/videos/dovsg_show_method.mp4" type="video/mp4">
-          </div>
-          <h2 class="subtitle has-text-centered" style="position: relative; top: 0px">
-            <span class="dperact">DovSG</span> constructs a <b>Dynamic 3D Scene Graph</b> and leverages <b>task decomposition with large language models</b>,
-            enabling <b>localized updates</b> of the 3D scene graphs during <b>interactive exploration</b>. 
-            This assists <b>mobile robots</b> in accurately executing <b>long-term tasks</b>, even in scenarios where human modifications to the environment are present.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr>
-
-
-  <section class="section">
+  <section class="section" style="position: relative; top: -50px">
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -159,8 +139,63 @@
   </section>
 
 
+  <section class="section" style="position: relative; top: -130px">
+    <div class="container is-max-widescreen">
 
-  <section class="section">
+      <div class="rows">
+
+
+        <!-- Animation. -->
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            </br>
+            </br>
+
+            <!-- <h2 class="title is-3"><span class="dperact">Overview of Our DovSG System.</span></h2> -->
+
+            <!-- Interpolating. -->
+            <div class="content has-text-justified">
+              <!-- <br> -->
+            </div>
+            <div style="text-align: center;">
+              <img src="media/figures/teaser.png" class="interpolation-image" width="80%" height="100%" />
+            </div>
+            <!-- </br>
+            </br> -->
+            <p class="content has-text-justified">
+              <b>DovSG</b> is a <b>mobile robotic system</b> designed to perform long-term tasks in <b>real-world environments</b>. 
+              It can detect changes in the scene during task execution, ensuring that subsequent subtasks are completed correctly. 
+              The system consists of five main components: <b>perception</b>, <b>memory</b>, <b>task planning</b>, <b>navigation</b>, and <b>manipulation</b>. 
+              The <b>memory module</b> includes a lower-level <b>semantic memory</b> and a higher-level <b>scene graph</b>, both of which are continuously updated as the robot explores the environment. 
+              This enables the robot to promptly detect manual changes (e.g., keys being moved from <b>cabinet</b> to <b>table</b>) and make the necessary adjustments for subsequent tasks (such as correctly executing <b>Task 2-2</b>).
+            </p>
+            
+          </div>
+        </div>
+  </section>
+
+
+
+  <section class="hero teaser" style="position: relative; top: -80px">
+    <div class="container is-fullhd">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered  is-centered">
+            <video id="teaser_video" controls muted autoplay loop height="100%" width="70%">
+              <source src="media/videos/dovsg_show_method.mp4" type="video/mp4">
+          </div>
+          <h2 class="subtitle has-text-centered" style="position: relative; top: 0px">
+            <span class="dperact">DovSG</span> constructs a <b>Dynamic 3D Scene Graph</b> and leverages <b>task decomposition with large language models</b>,
+            enabling <b>localized updates</b> of the 3D scene graphs during <b>interactive exploration</b>. 
+            This assists <b>mobile robots</b> in accurately executing <b>long-term tasks</b>, even in scenarios where human modifications to the environment are present.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section" style="position: relative; top: -100px">
     <div class="container is-max-desktop">
       <!-- Contributions Section -->
       <div class="columns is-centered has-text-centered">
@@ -179,9 +214,8 @@
     </div>
   </section>
 
-  <hr>
 
-  <section class="section">
+  <section class="section" style="position: relative; top: -130px">
     <div class="container is-max-widescreen">
 
       <div class="rows">
@@ -198,7 +232,7 @@
               <source src="media/videos/dovsg_demo_1.mp4" type="video/mp4">
             </video>
             <p style="text-align:center">
-              <b>Minor Adjustment</b>: Please move the red pepper to the plate, then move the green pepper to plate.
+              <b>Minor Adjustment</b>: Please move the <u style="color: red;">red pepper</u> to the <u style="font-family: 800;">plate</u>, then move the <u style="color: green;">green pepper</u> to <u>plate</u>.
             </p>
           </div>
 
@@ -206,15 +240,64 @@
             <video id="dist2" controls muted autoplay loop width="99%">
               <source src="media/videos/dovsg_demo_2.mp4" type="video/mp4">
             </video>
-            <b>Appearance</b>: Grab the blue toy and place it to the green toy, then move the green pepper to plate.
+            <b>Appearance</b>: Grab the <u style="color: blue;">blue toy</u> and place it to the <u style="color: green;">green toy</u>, then move the <u style="color: green;">green pepper</u> to <u>plate</u>.
           </div>
         </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_1.mp4" type="video/mp4">
+            </video>
+            <b>Minor Adjustment</b>: Move the <u style="color: green;">green pepper</u> to the <u>plate</u>, then throw the <u style="color: red;">Coca-Cola bottle</u> into the <u>trash can</u>.
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_2.mp4" type="video/mp4">
+            </video>
+            <b>Appearance</b>: Please move the <u style="color: purple;">eggplant</u> to the <u style="color: brown;">yellow cabinet</u>, and place the <u style="color: orange;">bananas</u> on the <u>plate</u>.
+          </div>
+        </div>
+
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_3.mp4" type="video/mp4">
+            </video>
+            <b>Positional Shift</b>: Place the <u style="color: red;">red pepper</u> in the <u>plate</u>, and the <u style="color: green;">green pepper</u> in the <u>plate</u>.
+          </div>
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_4.mp4" type="video/mp4">
+            </video>
+            <b>Minor Adjustment</b>: Put the <u style="color: orange;">banana</u> onto the <u>plate</u> on the white table, and then put the <u style="color: blue;">blue dinosaur</u> from the box onto the <u>green mouse pad</u>.
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_5.mp4" type="video/mp4">
+            </video>
+            <b>Appearance</b>: Move the <u style="color: yellow;">corn</u> to the <u>plate</u> in the cabinet, and put the <u style="color: green;">green pepper</u> onto the <u>plate</u> in the cabinet.
+          </div>
+
+          <div class="column has-text-centered">
+            <video id="dist2" controls muted autoplay loop width="99%">
+              <source src="media/videos/video_6.mp4" type="video/mp4">
+            </video>
+            <b>Positional Shift</b>: Set the <u style="color: red;">red pepper</u> in the <u style="color: green;">green container</u>, and set the <u style="color: yellow;">corn</u> in the <u style="color: green;">green container</u>.
+          </div>
+        </div>
+
+
       </div>
   </section>
 
 
-
-  <section class="section">
+  <section class="section"  style="position: relative; top: -180px">
     <div class="container is-max-widescreen">
 
       <div class="rows">
@@ -226,31 +309,26 @@
             </br>
             </br>
 
-            <h2 class="title is-3"><span class="dperact">Overview of Our DovSG System.</span></h2>
+            <h2 class="title is-3"><span class="dperact">Point Cloud to 3D Scene Graphs with Semantic Memory</span></h2>
 
             <!-- Interpolating. -->
             <div class="content has-text-justified">
               <!-- <br> -->
             </div>
             <div style="text-align: center;">
-              <img src="media/figures/teaser.png" class="interpolation-image" width="100%" height="100%" />
+              <img src="media/figures/pointcloud_to_semanticMemory.png" class="interpolation-image" width="100%" height="100%" />
             </div>
             <!-- </br>
             </br> -->
             <p class="content has-text-justified">
-              DovSG is a mobile robotic system designed to perform long-term tasks in real-world environments. 
-              It can detect changes in the scene during task execution, ensuring that subsequent subtasks are completed correctly. 
-              The system consists of five main components: perception, memory, task planning, navigation, and manipulation. 
-              The memory module includes a lower-level semantic memory and a higher-level scene graph, both of which are continuously updated as the robot explores the environment. 
-              This enables the robot to promptly detect manual changes (e.g., keys being moved from cabinet to table) and make the necessary adjustments for subsequent tasks (such as correctly executing Task 2-2).
+              <b>DovSG</b> can accurately create 3D Scene Graphs that effectively guide robot navigation.
             </p>
           </div>
         </div>
   </section>
 
 
-
-  <section class="section">
+  <section class="section"  style="position: relative; top: -230px">
     <div class="container is-max-widescreen">
 
       <div class="rows">
@@ -269,7 +347,7 @@
               <!-- <br> -->
             </div>
             <div style="text-align: center;">
-              <img src="media/figures/3d_scene_graph_generation.png" class="interpolation-image" width="100%" height="100%" />
+              <img src="media/figures/3d_scene_graph_generation.png" class="interpolation-image" width="80%" height="100%" />
             </div>
             <!-- </br>
             </br> -->
@@ -287,7 +365,7 @@
   </section>
 
 
-  <section class="section">
+  <section class="section"  style="position: relative; top: -230px">
     <div class="container is-max-widescreen">
       <div class="columns is-centered">
   
@@ -298,7 +376,7 @@
           <div class="content has-text-justified">
           </div>
           <div style="text-align: center;">
-            <img src="media/figures/relocalization_and_update.png" class="interpolation-image" width="100%" height="100%" />
+            <img src="media/figures/relocalization_and_update.png" class="interpolation-image" width="80%" height="100%" />
           </div>
           <p class="content has-text-justified">
             <b>(1)</b> We train the scene-specific regression MLP of the ACE model using RGB images and their poses, making the process highly efficient.
@@ -315,7 +393,7 @@
           <div class="content has-text-justified">
           </div>
           <div style="text-align: center;">
-            <img src="media/figures/pickup_strategy.png" class="interpolation-image" width="100%" height="100%" />
+            <img src="media/figures/pickup_strategy.png" class="interpolation-image" width="80%" height="100%" />
           </div>
           <p class="content has-text-justified">
             In the first row, we cropped the point cloud input into anyGrasp within a certain range around the target object, allowing anyGrasp to focus more on the target object without compromising the generation of collision-free grasps.
@@ -329,11 +407,78 @@
   </section>
 
 
-  <hr>
-
-  <section class="section">
+  <section class="section"  style="position: relative; top: -280px">
     <div class="container is-max-widescreen">
 
+      <div class="rows">
+
+
+        <!-- Animation. -->
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            </br>
+            </br>
+
+            <h2 class="title is-3"><span class="dperact">We tested the effectiveness of DovSG in four rooms of varying sizes and complexity.</span></h2>
+
+            <!-- Interpolating. -->
+            <div class="content has-text-justified">
+              <!-- <br> -->
+            </div>
+            <div style="text-align: center;">
+              <img src="media/figures/rooms.jpg" class="interpolation-image" width="50%" height="100%" />
+            </div>
+            <!-- </br>
+            </br> -->
+            <p class="content has-text-justified">
+              We tested the effectiveness of DovSG in four rooms of varying sizes and complexity: 
+              <b>Room 1</b> is approximately <b>60 m²</b>, <b>Room 2</b> is about <b>40 m²</b>, 
+              <b>Room 3</b> is around <b>100 m²</b>, and <b>Room 4</b> is about <b>150 m²</b>. 
+              <b>Rooms 1, 2, and 4</b> have relatively <b style="color: red;">complex scenes</b>, 
+              while <b>Room 3</b> is <b style="color: green;">simpler</b>.
+            </p>
+          </div>
+        </div>
+  </section>
+
+
+
+  <section class="section"  style="position: relative; top: -310px">
+    <div class="container is-max-widescreen">
+
+      <div class="rows">
+
+
+        <!-- Animation. -->
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            </br>
+            </br>
+
+            <h2 class="title is-3"><span class="dperact">The Success Rate of Long-term Tasks and SubTasks.</span></h2>
+
+            <!-- Interpolating. -->
+            <div class="content has-text-justified">
+              <!-- <br> -->
+            </div>
+            <div style="text-align: center;">
+              <img src="media/figures/success_rate_table.png" class="interpolation-image" width="80%" height="100%" />
+            </div>
+            <!-- </br>
+            </br> -->
+            <p class="content has-text-justified">
+              We compared with <a href="https://ok-robot.github.io/">OK-Robot</a>, and the success rates of the experimental subtasks and long-term tasks are shown in the table above.
+            </p>
+          </div>
+        </div>
+  </section>
+
+
+
+
+  <section class="section" style="position: relative; top: -310px">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3"><span class="dperact">Youtube Video</span></h2>
       <div class="rows">
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/xmUCHzE6EYc" frameborder="0" allow="autoplay; encrypted-media"
@@ -344,7 +489,8 @@
   </section>
 
 
-  <section class="section" id="BibTeX">
+
+  <section class="section" id="BibTeX" style="position: relative; top: -200px">
     <div class="container is-max-widescreen content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@misc{yan2024dynamicopenvocabulary3dscene,
@@ -367,7 +513,7 @@
           <div class="content has-text-centered">
             <p>
               Send feedback and questions to <a href="yanzhijie@buaa.edu.cn">Zhijie Yan</a>. 
-              Last updated on October 23, 2024.
+              Last updated on December 30, 2024.
             </p>
           </div>
         </div>
