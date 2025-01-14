@@ -419,6 +419,48 @@
             </br>
             </br>
 
+            <h2 class="title is-3"><span class="dperact">Detailed Relocalization Pipeline.</span></h2>
+
+            <!-- Interpolating. -->
+            <div class="content has-text-justified">
+              <!-- <br> -->
+            </div>
+            <div style="text-align: center;">
+              <img src="media/figures/detail_relocalization.png" class="interpolation-image" width="80%" height="100%" />
+            </div>
+            <!-- </br>
+            </br> -->
+            <p class="content has-text-justified">
+              <b>(a)</b> The robot captures multiple images from various angles to obtain a wide field of view. These images include RGB images and depth maps (RGBDs), with each frame corresponding to its pose in the robot's base coordinate system. 
+              <b>(b)</b> Since the pose information for each frame is known in the robot's base coordinate system, the relative poses between frames within the robot's coordinate system can be accurately calculated. 
+              This provides important geometric constraints for the subsequent relocalization steps.
+              <b>(c)</b> Using the LightGlue feature matching algorithm, the newly collected RGBDs are matched with the image data retained from the previous scene scanning phase. 
+              From the matched historical frames, the RGBDs most similar to the newly collected data and their corresponding poses in the world coordinate system are extracted. 
+              <b>(d)</b> Based on the ACE model, the rough pose of each newly observed frame in the world coordinate system is estimated, and each estimate is assigned a confidence score. 
+              The pose with the highest confidence is then selected to transform the new observation point cloud into the world coordinate system. 
+              <b>(e)</b> The historical image information associated with the new observation data (matched via LightGlue) is projected into the 3D point cloud within the world coordinate system, generating the target point cloud. 
+              <b>(f)</b> Using the transformed point cloud from step (d) as the source point cloud and the target point cloud from step (e) as the reference, 
+              the Iterative Closest Point (ICP) algorithm is employed for precise registration of the two. After ICP optimization, the source point cloud is accurately aligned with the world coordinate system. 
+              <b>(g)</b> Based on the above process, the pose of the new observation point cloud is accurately estimated. 
+              Figure (g) shows the point cloud result after relocalization, where the new observation point cloud successfully integrates into the global map with precise positioning.
+            </p>
+          </div>
+        </div>
+  </section>
+
+
+  <section class="section"  style="position: relative;">
+    <div class="container is-max-widescreen">
+
+      <div class="rows">
+
+
+        <!-- Animation. -->
+        <div class="rows is-centered ">
+          <div class="row is-full-width">
+            </br>
+            </br>
+
             <h2 class="title is-3"><span class="dperact">We tested the effectiveness of DovSG in four rooms of varying sizes and complexity.</span></h2>
 
             <!-- Interpolating. -->
@@ -513,7 +555,7 @@
           <div class="content has-text-centered">
             <p>
               Send feedback and questions to <a href="yanzhijie@buaa.edu.cn">Zhijie Yan</a>. 
-              Last updated on December 30, 2024.
+              Last updated on January 14, 2025.
             </p>
           </div>
         </div>
